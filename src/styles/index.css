@@ -593,9 +593,9 @@ video {
 .w-3\/4 {
 	width: 75%;
 }
-.bg-blue-400 {
+.bg-red-400 {
 	--tw-bg-opacity: 1;
-	background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
+	background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
 }
 .text-5xl {
 	font-size: 3rem;

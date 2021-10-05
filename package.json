@@ -12,11 +12,13 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "dev": "concurrently \"npm run watch\" \"npm run start\"",
+    "start": "react-scripts start",
     "build": "npm run watch:css && react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:css": "postcss ./src/tailwind.css -o ./src/index.css",
-    "watch": "chokidar \"./src/**/*.js\" -c \"npm run watch:css\""
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/index.css",
+    "watch": "chokidar \"./src/**/*.js\" -c \"npm run watch:css\"",
+    "dev": "concurrently \"npm run watch\" \"npm run start\""
   },
   "eslintConfig": {
     "extends": [
